@@ -145,15 +145,10 @@ interface State {
     modules: any[];
 }
 
-interface FileRef {
-    version: string;
-    path: string;
-}
-
 interface Message {
     id: number;
     status: string;
-    file: FileRef;
+    file: string;
     type: string;
     data: MessageData;
 }
